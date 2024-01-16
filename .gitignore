@@ -14,4 +14,4 @@ dump.rdb
 # build folder
 dist/
 
-sprint/provider.mjs
+provider.**
