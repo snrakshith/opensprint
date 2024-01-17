@@ -1,0 +1,29 @@
+{
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "build",
+    "baseUrl": ".",
+    "paths": {
+      "routes": ["routes/*"]
+    }
+  },
+  "lib": ["es2015"],
+  "include": [
+    "shared/**/*.ts",
+    "models/**/*.ts",
+    "routes/**/*.ts",
+    "modules/**/*.ts",
+    "index.ts"
+  ],
+  "exclude": ["node_modules"],
+  // Add or modify this section for tsconfig-paths
+  "tsconfig-paths-bootstrap": true
+}
