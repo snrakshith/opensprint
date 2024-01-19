@@ -23,7 +23,7 @@ const data = [
   {
     id: "terms1",
     label: "Accept terms and conditions",
-    info: false,
+    info: true,
     infoText: "You agree to our Terms of Service and Privacy Policy.",
   },
 ];

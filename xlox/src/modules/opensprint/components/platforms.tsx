@@ -52,7 +52,7 @@ export function Platforms() {
           variant="outline"
           role="combobox"
           aria-expanded={open}
-          className="w-[200px] justify-between"
+          className="w-[200px] justify-between col-span-3"
         >
           {value
             ? frameworks.find((framework) => framework.value === value)?.label

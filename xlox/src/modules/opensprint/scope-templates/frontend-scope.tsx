@@ -102,8 +102,10 @@ export function FrontendScope() {
               </FormItem>
             )}
           />
-
-          <Options data={data} />
+          <div className="">
+            <h1 className="text-xl font-bold">Enable</h1>
+            <Options data={data} />
+          </div>
 
           <Button type="submit" size="lg" variant="ikure">
             Submit
