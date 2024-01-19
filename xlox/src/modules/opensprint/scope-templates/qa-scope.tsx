@@ -15,10 +15,9 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
-import Logo from "../../assets/svg/logo.svg";
 import { FormSchema } from "@/shared/validations/LoginForm";
 
-export function LoginForm() {
+export function QAScope() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -43,42 +42,41 @@ export function LoginForm() {
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="w-1/3 space-y-6"
+          className="w-3/3 space-y-6"
         >
-          <img className="h-24 w-full object-fit" src={Logo} alt="Logo" />
           <FormField
             control={form.control}
             name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Username</FormLabel>
+                <FormLabel>Project Name</FormLabel>
                 <FormControl>
                   <Input
                     type="text"
-                    className="bg-slate-700 text-white focus:outline-none focus:ring focus:border-gray-300"
+                    // className="bg-slate-700 text-white focus:outline-none focus:ring focus:border-gray-300"
                     placeholder="Enter username"
                     {...field}
                   />
                 </FormControl>
-                <FormMessage className="text-white" />
+                <FormMessage />
               </FormItem>
             )}
           />
           <FormField
             control={form.control}
-            name="password"
+            name="username"
             render={({ field }) => (
               <FormItem>
-                <FormLabel className="text-white">Password</FormLabel>
+                <FormLabel>Description</FormLabel>
                 <FormControl>
                   <Input
-                    className="bg-slate-700 text-white focus:outline-none focus:ring focus:border-gray-300"
-                    placeholder="Enter password"
-                    type="password"
+                    type="text"
+                    // className="bg-slate-700 text-white focus:outline-none focus:ring focus:border-gray-300"
+                    placeholder="Enter username"
                     {...field}
                   />
                 </FormControl>
-                <FormMessage className="text-white" />
+                <FormMessage />
               </FormItem>
             )}
           />
