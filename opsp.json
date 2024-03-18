@@ -1,0 +1,9 @@
+{
+  "mode": "compact",
+  "adapter": "axios",
+  "files": "single",
+  "suffixPattern": "*.service.ts",
+  "versionSeperation": false,
+  "groupBy": "paths",
+  "apiType": "both"
+}

@@ -1,3 +1,26 @@
 {
-  "name": "opensprint"
+  "name": "opensprint",
+  "version": "0.0.1",
+  "description": "A cli to generate type safe api service code based on openapi spec file",
+  "scripts": {
+    "opsp-cli": "npx tsc ./cli/opsp.ts",
+    "generate": "node ./cli/opsp.js -s openapi.yaml -o ./generated/api"
+  },
+  "keywords": [
+    "type-safe",
+    "generate-types",
+    "openapi"
+  ],
+  "author": "Rakshith <snrakshith.97@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^20.11.25",
+    "@types/yargs": "^17.0.32",
+    "typescript": "^5.4.2"
+  }
 }
